@@ -5,10 +5,10 @@ class Trackingmore {
  
     const API_BASE_URL             = 'http://api.trackingmore.com/v2/';
     const ROUTE_CARRIERS           = 'carriers/';
-	const ROUTE_CARRIERS_DETECT    = 'carriers/detect';
+    const ROUTE_CARRIERS_DETECT    = 'carriers/detect';
     const ROUTE_TRACKINGS          = 'trackings';
-	const ROUTE_LIST_ALL_TRACKINGS = 'trackings/get';
-	const ROUTE_CREATE_TRACKING    = 'trackings/post';
+    const ROUTE_LIST_ALL_TRACKINGS = 'trackings/get';
+    const ROUTE_CREATE_TRACKING    = 'trackings/post';
     const ROUTE_TRACKINGS_BATCH    = 'trackings/batch'; 
 	const ROUTE_TRACKINGS_REALTIME = 'trackings/realtime';
 	const ROUTE_TRACKINGS_RELETE   = 'trackings/delete';
@@ -20,6 +20,16 @@ class Trackingmore {
 	const ROUTE_TRACKINGS_COSTTIME   = 'trackings/costtime';
 	const ROUTE_TRACKINGS_UPDATEMORE   = 'trackings/updatemore';
     protected $apiKey              = 'YOUR API KEY';
+    
+    public function __construct($apiKey)
+    {
+        $this->apiKey = $apiKey;
+    }
+    
+    public function setApiKey($apiKey)
+    {
+        $this->apiKey = $apiKey;
+    }
 
 
     protected function _getApiData($route, $method = 'GET', $sendData = array()){
