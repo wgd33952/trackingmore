@@ -2,7 +2,7 @@
     "name": "junec/trackingmore",
     "description": "This is trackingmore's SDK.",
     "type": "library",
-    "license": "Apache2",
+    "license": "MIT",
     "authors": [
         {
             "name": "June",
