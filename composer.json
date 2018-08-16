@@ -9,7 +9,7 @@
             "email": "junechan08@yeah.net"
         }
     ],
-    "minimum-stability": "dev-master",
+    "minimum-stability": "master",
     "require": {
 		"php": ">=5.4.0"
 	},
