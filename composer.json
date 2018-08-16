@@ -3,6 +3,9 @@
     "description": "This is trackingmore's SDK.",
     "type": "library",
     "license": "MIT",
+    "require": {
+        "php": ">=5.4.0"
+    },
     "authors": [
         {
             "name": "June",
@@ -10,10 +13,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-		"php": ">=5.4.0"
-	},
-	"autoload": {
+    "autoload": {
         "psr-4": {
             "Junec\\Trackingmore\\": "src"
         }
